@@ -1,0 +1,341 @@
+body {
+    background: -webkit-linear-gradient(to right, #56B4D3, #348F50);
+    background: linear-gradient(to right, #56B4D3, #348F50);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 10px;
+    height: 100vh;
+    margin: 0;
+    font-family: CerebriSans-Regular,-apple-system,system-ui,Roboto,sans-serif;
+}
+
+button:hover {
+    cursor: pointer;
+    transform: scale(1.05) rotate(-1deg);
+}
+
+button {
+    border-radius: 100px;
+    color: green;
+    cursor: pointer;
+    font-family: CerebriSans-Regular,-apple-system,system-ui,Roboto,sans-serif;
+    padding: 3px 15px;
+    text-decoration: none;
+    transition: all 250ms;
+    border: 0;
+    font-size: 14px;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+body h1 {
+    color: white;
+    margin-left: 2rem;
+}
+
+.gal-container {
+    margin-top: 6rem;
+    text-align: center;
+}
+
+.grid-container {
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    flex-wrap: wrap;
+}
+
+.gall-pic {
+    height: 14rem;
+    width: 15rem;
+    filter: grayscale(100%);
+    transition-duration: 0.5s;
+    border-radius: 15px;
+    border: 1px solid transparent;
+    box-shadow: 10px 9px 5px 1px rgb(64 60 67 / 16%);
+}
+
+.gall-pic:hover {
+    filter: none;
+}
+
+.gal-btn {
+    margin: 0 auto;
+    background-color: transparent;
+    border: none;
+}
+
+.quick-search {
+    border: 1px solid transparent;
+    box-shadow: 13px 9px 5px 1px rgb(64 60 67 / 16%);
+    width: 22rem;
+    height: 3rem;
+    margin: 1rem;
+    border-radius: 10px;
+}
+
+
+
+
+/*Canvas+ControlBox*/
+.main-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    height: 100%;
+}
+
+#canvas {
+    margin-left: 2rem;
+    border-radius: 8px;
+}
+
+.can-edi {
+    margin-top: 6rem;
+    text-align: center;
+    display: none;
+    height: 100%;
+}
+
+
+
+
+/* CONTROL BOX */
+.control-box label {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: xx-large;
+}
+
+#palette {
+    margin-top: 1rem;
+}
+
+.control-box input {
+    display: block;
+    height: 2rem;
+    width: 3rem;
+    margin: 0 auto;
+}
+
+.control-box .text {
+    width: 13rem;
+    margin: 0 auto;
+}
+
+.control-box button {
+    margin: 0 auto;
+    margin-top: 1rem;
+    box-shadow: 10px 9px 5px 1px rgb(64 60 67 / 16%);
+}
+
+.control-box .inc-dec-con button {
+    height: 3rem;
+    width: 3rem;
+    font-size: larger;
+}
+
+.control-box .side-text {
+    width: 3rem;
+    height: 3rem;
+    /* padding: 0; */
+}
+
+.control-box .side-text p {
+    margin: 0 auto;
+}
+
+.control-box .change-txt-info{
+    color: white;
+    font-size: 2rem;
+}
+
+.switch-line {
+    font-size: large;
+    height: 4rem;
+    width: 4rem;
+    /* display: block; */
+    margin: 0 auto;
+}
+
+.switch-line p {
+    margin: 0 auto;
+}
+
+.control-box .lst-btn {
+    height: 3rem;
+    width: 3rem;
+    text-align: center;
+    /* font-size: xx-large; */
+}
+
+.control-box .input-color {
+    visibility: hidden;
+    width: 0;
+    height: 0;
+}
+
+#file {
+    visibility: hidden;
+    width: 0;
+    height: 0;
+}
+
+#upload-btn {
+    /* display: block; */
+    align-self: center;
+    margin-top: 2rem;
+    width: 6rem;
+    font-size: large;
+}
+
+.emoji-btn button{
+    background-color: transparent;
+}
+
+
+
+
+/* NAV BAR */
+.main-nav {
+    height: 65px;
+    /* margin-inline: 10px; */
+    border-radius: 20px;
+    z-index: 1;
+    background: linear-gradient(.25turn, #105e08, #dce3e3);
+    display: flex;
+    justify-content: space-between;
+    width: 96%;
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+
+}
+
+.logo {
+    height: 100%;
+    border-radius: 20px;
+}
+
+.main-nav button {
+    /* display: inline; */
+    height: 100%;
+    width: 5rem;
+    color: green;
+    font-weight: 600;
+    margin-inline-end: 0.5rem;
+}
+
+
+.main-nav div:last-child {
+    margin-right: 2.5rem;
+}
+
+
+/* GALLARY */
+.btn-srch {
+    height: 6rem;
+    width: 20rem;
+    margin: 1rem;
+    box-shadow: 10px 9px 5px 1px rgb(64 60 67 / 16%);
+    font-size: xx-large;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.key-words {
+    flex-wrap: wrap;
+    text-align: center;
+    height: 5rem;
+    width: 100%;
+    display: none;
+}
+
+.key-btn {
+    width: fit-content;
+    height: fit-content;
+    margin: 0.5rem;
+    background-color: #4CAF50;
+    /* Green */
+    border-radius: 15px;
+    color: white;
+    padding: 5px 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+
+
+/* ABOUT*/
+.about-container{
+    display: none;
+    padding: 10px;
+    height: 100%;
+    width: 95%;
+    margin-top: 6rem;
+}
+
+.about-container h1{
+    font-size: 2rem;
+    text-align: center;
+}
+
+.about-container .how-to{
+    display: flex;
+    flex-direction: column;
+}
+
+.about-container .how-to ul {
+    margin: 0;
+}
+
+.about-container .how-to li {
+    padding: 4px;
+}
+
+.about-container .how-to li span{
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.about-container .about-project{
+    display: flex;
+    flex-direction: column;
+}
+
+.about-container .about-project h2{
+    margin: 0;
+    padding: 8px;
+}
+.about-container .about-project h3{
+    margin: 0;
+    padding: 8px;
+}
+
+
+
+/* FOOTER */
+footer {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+}
+
+footer h1 {
+    margin: 0 auto
+}
+
+.footer-logo{
+    height: 8rem;
+    width: fit-content;
+}
+
+footer p {
+    color: whitesmoke;
+
+}
