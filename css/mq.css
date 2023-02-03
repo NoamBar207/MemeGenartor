@@ -34,6 +34,33 @@
 
 
 @media (max-width: 780px) {
+    .main-nav{
+        width: 100%;
+        border-radius: 0;
+
+        transform: translate(-50%, 0%);
+        top: 0;
+    }
+    
+    .main-nav div {
+        display: flex;
+        align-items: center;
+        margin: 0;
+    }
+
+    .main-nav img {
+        border-radius: 0;
+    }
+
+    .main-nav div:last-child {
+        margin: 0;
+        margin-right:20px ;
+    }
+
+    .main-nav button{
+        height: 3rem;
+    }
+
     .can-edi {
         margin-top: 8rem;
     }
@@ -83,67 +110,56 @@
 
     .main-nav {
         width: 100%;
-        border-radius: 0;
     }
 
-    .main-nav div {
-        display: flex;
-        align-items: center;
-        margin: 0;
-    }
+  
 
-    .main-nav img {
-        border-radius: 0;
+    .about-container {
+        margin-bottom: 14rem;
+        
+        /* padding-inline: 20px 0; */
     }
-
-    .main-nav div:last-child {
-        margin: 0;
-    }
-
-    .main-nav button {
-        font-size: 12px;
-        height: 2rem;
-    }
-
-    .about-container ul{
+    
+    .about-container ul {
         padding-inline: 20px 0;
     }
-
+    
 }
 
 @media (max-width: 475px) {
-
+    
     footer {
         margin-top: 4rem;
     }
-
+    
     .main-nav button {
         height: 1.5rem;
         width: 4rem;
         font-size: 10px;
         text-align: center;
     }
-
+    
     .quick-search {
         width: 20em;
     }
-
+    
     .btn-srch {
         font-size: 18px;
         width: 10em;
         height: 5em;
     }
-
-    .about-container{
-    font-size: 14px;
+    
+    .about-container {
+        font-size: 14px;
+        margin-bottom: 5rem;
     }
-
+    
     .about-container h1 {
         font-size: 20px;
         margin: 6px;
     }
 
-    .about-container h2{
+    .about-container h2 {
         font-size: 18px;
         margin: 6px;
     }
